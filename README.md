@@ -44,3 +44,15 @@ FROM dim_members m
 INNER JOIN ranked_transactions rt ON m.member_id = rt.member_id AND rt.rn = 1
 LEFT JOIN dim_payment_methods pm ON rt.payment_method_id = pm.payment_method_id
 INNER JOIN stg_churn_labels c ON m.member_id = c.msno;
+
+```
+🎯 3-Step Revenue Recovery Plan
+Auto-Renew Migration: Offer a 10% discount on the next billing cycle for saving an auto-renew payment method (converting 25% of manual users recovers +$1.65M/mo).
+
+Pre-Alert Dunning: Trigger SMS balance reminders 72 hours and 24 hours prior to Carrier Billing cycle attempts (+$480K/mo).
+
+Plan Packaging: Introduce discounted quarterly and annual options to move subscribers off volatile 30-day cycles (+$720K/mo).
+
+Total Protected MRR Target: +$2.85M / Month ($34.2M annualized run-rate).
+
+
