@@ -148,8 +148,9 @@ INNER JOIN stg_churn_labels c ON m.member_id = c.msno;
 │ • Impact: Migrating 15% of accounts to extended plans protects +$720,000/month.│
 └────────────────────────────────────────────────────────────────────────────────┘
 
-Total Projected Protected MRR: +$2.85M / Month (Annualized run-rate: $34.2M)🚀 Repository File StructurePlaintextkkbox-subscription-pipeline/
+Repository File Structure:
 
+kkbox-subscription-pipeline/
 │
 ├── data/
 │   ├── raw/                              # Source transactional CSVs (git-ignored)
@@ -175,3 +176,5 @@ Total Projected Protected MRR: +$2.85M / Month (Annualized run-rate: $34.2M)🚀
 ├── .gitignore                            # Ignores large raw CSV files & venv
 ├── requirements.txt                      # Python dependencies (pandas, docx, sqlalchemy)
 └── README.md                             # Project documentation
+
+ Project documentation
